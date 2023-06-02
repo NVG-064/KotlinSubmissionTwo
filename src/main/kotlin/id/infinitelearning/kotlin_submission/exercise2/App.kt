@@ -72,6 +72,9 @@ fun main() {
 
   println()
 
+  /** Reference for get local date and time
+   * https://www.baeldung.com/kotlin/current-date-time
+   */
   val systemTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMM"))
   val monthNow = monthMap[systemTime.lowercase()]
   val birthMonth = monthMap["apr"]
